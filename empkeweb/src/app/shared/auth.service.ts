@@ -9,11 +9,7 @@ export class AuthService {
 
   constructor(private http: HttpClient) { }
 
-  login() {
-    const user = {
-      name: 'plaszlo',
-      password: 'teszt'
-    }
+  login(user: any) {
     const url = this.host + 'login'
     return this.http.post(url, user)
   }
