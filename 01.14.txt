@@ -1,0 +1,44 @@
+
+Frontend
+
+2026-01-14
+
+------------------------
+
+Azonosítás (Token)
+
+Új Backend
+
+
+empkeapi - backend --> npm create sipere@latest
+empkeweb - frontend --> ng new empkeweb
+
+
+empkeapi feladatok:
+ - következő parancsok:
+		- node op key:generate
+		- node op make:model employees
+		- node op migrate
+		- npm run dev
+
+empkeweb feladatok:
+ - telepítéskor kiválasztani az AI-t
+ - következő parancsok:
+		- ng generate component employee --type component
+		- ng generate component login --type component
+		- ng generate component home --type component
+		- ng generate service shared/auth --type service
+		- ng serve --open
+		
+HttpClient:
+- app.config.ts --> provideHttpClient ()
+- auth.service.ts -->
+		export class AuthService {
+		  const url = 'http://localhost:8000/api//login';
+		  
+		  constructor(private http: HttpClient) {}
+		  
+		}
+		
+		
+
